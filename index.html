@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <!-- <input type="text" id="hexaNumber"> <br>
+
+    <input type="color" id="color"> -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="./img/1 logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi  i am Sharif in here</h1>
+            </div>
+            <div class="arrow">
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </div>
+<!-- about-section-start -->
+<div class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./img/photo-1519944518895-f08a12d6dfd5.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci totam distinctio quos labore aut est, laboriosam commodi, repellendus, repellat eaque eligendi praesentium at quis. Ab eius optio eveniet tempore provident!</p>
+                <div class="tab-taitels">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Ui?Ux</span> <br> Designing Web/App Interface</li>
+                        <li><span>Web Development</span> <br> Web app Development</li>
+                        <li><span>Laravel Developer</span> <br> Designing Web/App Interface</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experince">
+                    <ul>
+                        <li><span>Echommerce</span> <br> Multivendor Echommerce</li>
+                        <li><span>Envontory</span> <br> Online Shop</li>
+                        <li><span>Laravel Developer</span> <br> Designing Web/App Interface</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bss</span> <br> Designing Web/App Interface</li>
+                        <li><span>Web Development</span> <br> Web app Development</li>
+                        <li><span>Laravel Developer</span> <br> Designing Web/App Interface</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about-section-End -->
+<!-- Services-section-Start -->
+<div class="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <span><i class="fa-solid fa-code"></i></span>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum recusandae, laborum corrupti pariatur reiciendis, praesentium neque cupiditate labore esse, eum consequatur dolorum odit qui.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <span><i class="fa-solid fa-crop"></i></span>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum recusandae, laborum corrupti pariatur reiciendis, praesentium neque cupiditate labore esse, eum consequatur dolorum odit qui.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <span><i class="fa-brands fa-app-store"></i></span>
+                <h2>grafix Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum recusandae, laborum corrupti pariatur reiciendis, praesentium neque cupiditate labore esse, eum consequatur dolorum odit qui.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services-section-ENd -->
+<!-- Portfolio-section-Start -->
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./img/work1.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore quasi placeat nostrum at laudantium exercitationem, doloribus corporis in est.</p>
+                    <a href="https://guileless-zabaione-6dc2ad.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/work2.avif" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore quasi placeat nostrum at laudantium exercitationem, doloribus corporis in est.</p>
+                    <a href="https://www.ebnhost.com/?fbclid=IwAR1ei7tylKmTF2LSU1QFTH-rqwHYzyJ_hQEIJhW5l7J4o9uhTDuWge-k1ZA"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/work3.jpeg" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore quasi placeat nostrum at laudantium exercitationem, doloribus corporis in est.</p>
+                    <a href="https://lambent-phoenix-952ea0.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="service-show">
+            <a href="#">See More</a>
+        </div>
+    </div>
+</div>
+<!-- Portfolio-section-End -->
+<!-- Contact-section-Start -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sharifhossaion57@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>01789979216</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="">
+                    <a href="#" download class="btn">Download CV</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p>Copyright @copy reserved by<i class="fa-solid fa-heart"></i> Sharif</p>
+</div>
+<!-- Contact-section-ENd -->
+    <script src="script.js"></script>
+</body>
+</html>
