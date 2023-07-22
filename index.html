@@ -15,33 +15,43 @@
     <input type="color" id="color"> -->
     <div id="header">
         <div class="container">
-            <nav>
-                <img class="logo" src="./img/1 logo.png" alt="">
+            <nav class="header-fixed">
+                <a href="#">
+                    <img class="logo" src="./img/1 logo.png" alt="">
+                </a>
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi  i am Sharif in here</h1>
-            </div>
             <div class="arrow">
                 <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
             </div>
         </div>
     </div>
 <!-- about-section-start -->
-<div class="about" id="about">
+<!-- slider-section-start -->
+<div id="slider">
+    <div class="container">
+        <div class="row">
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi  i am Sharif in here</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider-section-end -->
+<div id="about" class="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="./img/photo-1519944518895-f08a12d6dfd5.jpeg" alt="">
+                <img src="./img/sharif2.jpg" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About Me</h1>
@@ -78,7 +88,7 @@
 </div>
 <!-- about-section-End -->
 <!-- Services-section-Start -->
-<div class="service">
+<div id="service" class="service">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
@@ -105,11 +115,19 @@
 </div>
 <!-- Services-section-ENd -->
 <!-- Portfolio-section-Start -->
-<div class="portfolio">
+<div id="portfolio" class="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Portfolio</h1>
-        <div class="work-list">
-            <div class="work">
+        <h1 class="sub-title portfolio-center">My Portfolio</h1>
+        <div class="portfolio-list">
+            <ul id="ulList">
+                <li data-target="all" class="ative">All</li>
+                <li data-target="inventory">Inventory</li>
+                <li data-target="pos">Pos</li>
+                <li data-target="echommerce">Echommerce</li>
+            </ul>
+        </div>
+        <div id="work-list">
+            <div class="work" data-id="inventory">
                 <img src="./img/work1.jpg" alt="">
                 <div class="layer">
                     <h3>Social Media App</h3>
@@ -117,7 +135,15 @@
                     <a href="https://guileless-zabaione-6dc2ad.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work" data-id="inventory">
+                <img src="./img/work1.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore quasi placeat nostrum at laudantium exercitationem, doloribus corporis in est.</p>
+                    <a href="https://guileless-zabaione-6dc2ad.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-id="pos">
                 <img src="./img/work2.avif" alt="">
                 <div class="layer">
                     <h3>Music App</h3>
@@ -125,7 +151,23 @@
                     <a href="https://www.ebnhost.com/?fbclid=IwAR1ei7tylKmTF2LSU1QFTH-rqwHYzyJ_hQEIJhW5l7J4o9uhTDuWge-k1ZA"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work" data-id="pos">
+                <img src="./img/work2.avif" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore quasi placeat nostrum at laudantium exercitationem, doloribus corporis in est.</p>
+                    <a href="https://www.ebnhost.com/?fbclid=IwAR1ei7tylKmTF2LSU1QFTH-rqwHYzyJ_hQEIJhW5l7J4o9uhTDuWge-k1ZA"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-id="echommerce">
+                <img src="./img/work3.jpeg" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore quasi placeat nostrum at laudantium exercitationem, doloribus corporis in est.</p>
+                    <a href="https://lambent-phoenix-952ea0.netlify.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-id="echommerce">
                 <img src="./img/work3.jpeg" alt="">
                 <div class="layer">
                     <h3>Online Shopping App</h3>
@@ -141,13 +183,13 @@
 </div>
 <!-- Portfolio-section-End -->
 <!-- Contact-section-Start -->
-<div id="contact">
+<div id="contact" class="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>sharifhossaion57@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>01789979216</p>
+                <p> <a href="mailto:sharifhossaion57@gmail.com"><i class="fa-solid fa-envelope"></i>sharifhossaion57@gmail.com</a></p>
+                <p><a href="tel:+01789979216"><i class="fa-solid fa-phone"></i>01789979216</a></p>
                 <div class="social-icon">
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>

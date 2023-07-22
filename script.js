@@ -57,7 +57,8 @@ window.addEventListener("scroll",function(){
     }
 })
 //services animation section End
-//portfolio animation section start
+
+// portfolio animation section start
 window.addEventListener("scroll",function(){
     let portfolio = document.querySelector(".portfolio");
     let portfoliocounter = portfolio.getBoundingClientRect().top;
@@ -69,7 +70,42 @@ window.addEventListener("scroll",function(){
         portfolio.classList.remove("activeses");
     }
 })
+
+var naber = document.getElementById("ulList").children;
+var filter = document.getElementById("work-list").children;
+for(var i = 0; i<naber.length; i++){
+    naber[i].addEventListener('click',function(){
+        for(var j = 0; j<naber.length;j++){
+            naber[j].classList.remove("ative");
+        }
+        this.classList.add("ative");
+        var dtarget =this.getAttribute("data-target"); 
+        for(var k = 0; k<filter.length; k++){
+            filter[k].style.display="none";
+            if(dtarget==filter[k].getAttribute("data-id")){
+                filter[k].style.display="block"; 
+            }
+            if(dtarget=="all"){
+                filter[k].style.display="block";  
+            }
+        }
+    })
+}
+
 //portfolio animation section ENd
+//contact animation section start
+window.addEventListener("scroll",function(){
+    let contact = document.querySelector(".contact");
+    let contactscounter = contact.getBoundingClientRect().top;
+    let scrolle = window.scrollY;
+    if(contactscounter<scrolle){
+        contact.classList.add("cactive");
+    }
+    else{
+        contact.classList.remove("cactive");
+    }
+})
+//contact animation section end
 
 
 // outknoledge
