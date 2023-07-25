@@ -31,6 +31,26 @@ window.onscroll = function(){
     }
 }
 //arrow key end
+//slider section start
+    var text = ['Sharif Hossain','Web Designer','Web Developer'];
+    var count = 0;
+    var index = 0;
+    var currentText =0;
+    var letter = 0;
+    setInterval(myType,200);
+    function myType(){
+        currentText = text[count];
+        letter = currentText.slice(0,index++);
+        var place = document.querySelector('.text-type').innerHTML=letter;
+        if(letter.length==currentText.length){
+            count++;
+            index = 0;
+        }
+        if(count==text.length){
+            count = 0;
+        }
+    }
+//slider section end
 //about animation section start
 window.addEventListener("scroll",function(){
     let about = document.querySelector(".about");
